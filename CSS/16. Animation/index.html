@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-size: contain;
+            background-image: url("https://wallpapers.com/images/featured/4k-galaxy-a3qjl9atd2ku58vt.jpg");
+
+        }
+        .sun{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            border-radius: 50%;
+            
+        }
+        .Circle{
+            height: 100px;
+            width: 400px;
+            
+            
+           
+            border-radius: 50%;
+            position: relative;
+           
+            animation-name: rotate;
+            animation-duration: 15s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            
+            
+        }
+
+        #mercury{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: gray;
+            position: absolute;
+            box-shadow: 2px 2px 20px white;
+            
+            
+        }
+
+       
+
+        @keyframes rotate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="sun">
+        <img src="https://pngimg.com/uploads/sun/small/sun_PNG13424.png" alt="">
+    </div>
+    <div class="Circle" >
+        <div id="mercury"></div>
+    </div>
+    
+
+    
+</body>
+</html>
